@@ -305,7 +305,7 @@
           </div>
         </section>
 
-        <p class="footer-note">Recommended repo structure: <code>reverb-demo.html</code> at the root and all audio files inside <code>assets/</code> with names like <code>impulse_dry.wav</code>, <code>impulse_A.wav</code>, <code>impulse_B.wav</code>, and <code>impulse_neoverb.mp3</code> [conversation_history:1].</p>
+        <p class="footer-note">Recommended repo structure: <code>reverb-demo.html</code> at the root and all audio files inside <code>assets/</code> with names like <code>impulse_dry.mp3</code>, <code>impulse_A.mp3</code>, <code>impulse_B.mp3</code>, and <code>impulse_neoverb.mp3</code> [conversation_history:1].</p>
       </main>
     </section>
   </div>
@@ -360,7 +360,7 @@
     const activeInfo = document.getElementById('activeInfo');
 
     function buildPath(signal, condition) {
-      const ext = condition === 'neoverb' ? 'mp3' : 'wav';
+      const ext = condition === 'neoverb' ? 'mp3';
       return `./assets/${signal}_${condition}.${ext}`;
     }
 
@@ -406,7 +406,7 @@
         article.innerHTML = `
           <div class="tag">${pretty[condition]}</div>
           <h3>${pretty[activeSignal]}</h3>
-          <div class="small">${activeSignal}_${condition}.${condition === 'neoverb' ? 'mp3' : 'wav'}</div>
+          <div class="small">${activeSignal}_${condition}.${condition === 'neoverb' ? 'mp3'}</div>
           <audio controls preload="metadata" data-condition="${condition}" src="${buildPath(activeSignal, condition)}"></audio>
         `;
         players.appendChild(article);
