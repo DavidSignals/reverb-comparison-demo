@@ -1,8 +1,6 @@
 # Reverb Comparison Demo
 
-Interactive web demo created to validate and visualize the results presented in the accompanying reverb research article. The project compares four versions of the same source material — Dry, Plugin A, Plugin B, and Neoverb — through browser-based listening tests, real-time spectral monitoring, average spectral comparison, and compact objective metrics [file:132][file:37].
-
-[cite:134]
+Interactive web demo created to validate and visualize the results presented in the accompanying reverb research article. The project compares four versions of the same source material — Dry, Plugin A, Plugin B, and Neoverb — through browser-based listening tests, real-time spectral monitoring, average spectral comparison, and compact objective metrics.
 
 ## Overview
 
